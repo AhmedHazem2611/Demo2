@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Category": {
+    "/api/Categories": {
       "get": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "responses": {
           "200": {
@@ -18,7 +18,7 @@
       },
       "post": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "requestBody": {
           "content": {
@@ -46,10 +46,10 @@
         }
       }
     },
-    "/api/Category/{Id}": {
+    "/api/Categories/{Id}": {
       "delete": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "parameters": [
           {
@@ -69,10 +69,10 @@
         }
       }
     },
-    "/api/Category/{id}": {
+    "/api/Categories/{id}": {
       "put": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "parameters": [
           {
@@ -111,10 +111,10 @@
         }
       }
     },
-    "/api/Customer/{Id}": {
+    "/api/Customers/{Id}": {
       "get": {
         "tags": [
-          "Customer"
+          "Customers"
         ],
         "parameters": [
           {
@@ -134,10 +134,10 @@
         }
       }
     },
-    "/api/Customer": {
+    "/api/Customers": {
       "post": {
         "tags": [
-          "Customer"
+          "Customers"
         ],
         "requestBody": {
           "content": {
@@ -165,10 +165,10 @@
         }
       }
     },
-    "/api/Customer/{id}": {
+    "/api/Customers/{id}": {
       "put": {
         "tags": [
-          "Customer"
+          "Customers"
         ],
         "parameters": [
           {
@@ -208,7 +208,7 @@
       },
       "delete": {
         "tags": [
-          "Customer"
+          "Customers"
         ],
         "parameters": [
           {
@@ -228,10 +228,10 @@
         }
       }
     },
-    "/api/Customer/purchase-history/{id}": {
+    "/api/Customers/purchase-history/{id}": {
       "get": {
         "tags": [
-          "Customer"
+          "Customers"
         ],
         "parameters": [
           {
@@ -251,10 +251,10 @@
         }
       }
     },
-    "/api/Employee/{id}/sales-stat": {
+    "/api/Employees/{id}/sales-stat": {
       "get": {
         "tags": [
-          "Employee"
+          "Employees"
         ],
         "parameters": [
           {
@@ -274,10 +274,10 @@
         }
       }
     },
-    "/api/Employee": {
+    "/api/Employees": {
       "get": {
         "tags": [
-          "Employee"
+          "Employees"
         ],
         "responses": {
           "200": {
@@ -287,56 +287,7 @@
       },
       "delete": {
         "tags": [
-          "Employee"
-        ],
-        "parameters": [
-          {
-            "name": "Id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Employee"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateEmployeeDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateEmployeeDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateEmployeeDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Employee"
+          "Employees"
         ],
         "parameters": [
           {
@@ -348,6 +299,55 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Employees"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEmployeeDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEmployeeDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEmployeeDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Employees"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -367,6 +367,272 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sales": {
+      "get": {
+        "tags": [
+          "Sales"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sales"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSaleDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSaleDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSaleDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sales/{Id}": {
+      "put": {
+        "tags": [
+          "Sales"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSalesDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSalesDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSalesDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Sales"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sales/revenue": {
+      "get": {
+        "tags": [
+          "Sales"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicles": {
+      "get": {
+        "tags": [
+          "Vehicles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vehicles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVehicleDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVehicleDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVehicleDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicles/{Id}": {
+      "delete": {
+        "tags": [
+          "Vehicles"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Vehicles"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateVehicleDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateVehicleDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateVehicleDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicles/available-vehicles": {
+      "get": {
+        "tags": [
+          "Vehicles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicles/sold-vehicles": {
+      "get": {
+        "tags": [
+          "Vehicles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicles/category/{categoryName}": {
+      "get": {
+        "tags": [
+          "Vehicles"
+        ],
+        "parameters": [
+          {
+            "name": "categoryName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -540,6 +806,75 @@
           "hireDate": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateVehicleDTO": {
+        "required": [
+          "categoryId",
+          "make",
+          "mileage",
+          "model",
+          "price",
+          "status",
+          "vin",
+          "year"
+        ],
+        "type": "object",
+        "properties": {
+          "make": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "model": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "color": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "mileage": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "vin": {
+            "maxLength": 17,
+            "minLength": 1,
+            "type": "string"
+          },
+          "fuelType": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "transmission": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -770,6 +1105,84 @@
           },
           "vehicle": {
             "$ref": "#/components/schemas/Vehicle"
+          },
+          "vehicleId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSaleDTO": {
+        "required": [
+          "customerId",
+          "employeeId",
+          "paymentMethod",
+          "salePrice",
+          "salesDate"
+        ],
+        "type": "object",
+        "properties": {
+          "salesDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "salePrice": {
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "paymentMethod": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "notes": {
+            "maxLength": 300,
+            "type": "string",
+            "nullable": true
+          },
+          "customerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employeeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vehicleId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSalesDTO": {
+        "type": "object",
+        "properties": {
+          "paymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateVehicleDTO": {
+        "type": "object",
+        "properties": {
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -781,7 +1194,6 @@
           "mileage",
           "model",
           "price",
-          "saleId",
           "status",
           "vin",
           "year"
@@ -850,7 +1262,8 @@
           },
           "saleId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "sale": {
             "$ref": "#/components/schemas/Sale"

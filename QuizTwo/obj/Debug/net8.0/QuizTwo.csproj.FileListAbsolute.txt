@@ -139,3 +139,4 @@ C:\Users\ahmed.hazem\source\repos\QuizTwo\QuizTwo\obj\Debug\net8.0\refint\QuizTw
 C:\Users\ahmed.hazem\source\repos\QuizTwo\QuizTwo\obj\Debug\net8.0\QuizTwo.pdb
 C:\Users\ahmed.hazem\source\repos\QuizTwo\QuizTwo\obj\Debug\net8.0\QuizTwo.genruntimeconfig.cache
 C:\Users\ahmed.hazem\source\repos\QuizTwo\QuizTwo\obj\Debug\net8.0\ref\QuizTwo.dll
+C:\Users\ahmed.hazem\source\repos\QuizTwo\QuizTwo\obj\Debug\net8.0\QuizTwo.sourcelink.json

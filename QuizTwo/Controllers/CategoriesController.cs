@@ -10,10 +10,10 @@ namespace QuizTwo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoriesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CategoriesController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }

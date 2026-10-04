@@ -1,11 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using QuizTwo.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace QuizTwo.Models
+namespace QuizTwo.DTOs
 {
-    public class Sale
+    public class SaleDTO
     {
-        [Key]
         public int Id { get; set; }
         [Required]
         public DateTime SalesDate { get; set; }
@@ -20,13 +20,10 @@ namespace QuizTwo.Models
         [Required]
         [ForeignKey(nameof(CustomerId))]
         public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
         [ForeignKey(nameof(EmployeeId))]
         [Required]
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
-        public Vehicle Vehicle { get; set; }
-        public int VehicleId { get; set; }
 
+        public int VehicleId { get; set; }  
     }
 }

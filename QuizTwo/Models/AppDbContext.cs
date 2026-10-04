@@ -69,9 +69,9 @@ namespace QuizTwo.Models
                 );
             modelBuilder.Entity<Vehicle>()
                 .HasData(
-                    new Vehicle { Id = 1, Make = "Toyota", Model = "Camry", Year = 2020, Price = 25000, VIN = "1Hfosdjf", CategoryId = 1 , FuelType="petrol", Status="Available" , Transmission="Automatic", SaleId=1, Color="blue"},
-                    new Vehicle { Id = 2, Make = "Honda", Model = "Civic", Year = 2019, Price = 20000, VIN = "2Hfosdjf", CategoryId = 2, FuelType = "petrol", Status = "Available", Transmission = "Automatic", SaleId=2, Color="blue"},
-                    new Vehicle { Id = 3, Make = "Ford", Model = "Focus", Year = 2018, Price = 18000, VIN = "3Hfosdjf", CategoryId = 3, FuelType = "petrol", Status = "Available", Transmission = "Automatic" , SaleId = 3, Color="blue" }
+                    new Vehicle { Id = 1, Make = "Toyota", Model = "Camry", Year = 2020, Price = 25000, VIN = "1Hfosdjf", CategoryId = 1 , FuelType="petrol", Status="Sold" , Transmission="Automatic", SaleId=1, Color="blue"},
+                    new Vehicle { Id = 2, Make = "Honda", Model = "Civic", Year = 2019, Price = 20000, VIN = "2Hfosdjf", CategoryId = 2, FuelType = "petrol", Status = "Sold", Transmission = "Automatic", SaleId=2, Color="blue"},
+                    new Vehicle { Id = 3, Make = "Ford", Model = "Focus", Year = 2018, Price = 18000, VIN = "3Hfosdjf", CategoryId = 3, FuelType = "petrol", Status = "Sold", Transmission = "Automatic" , SaleId = 3, Color="blue" }
                     );
             modelBuilder.Entity<Customer>()
                 .HasData(

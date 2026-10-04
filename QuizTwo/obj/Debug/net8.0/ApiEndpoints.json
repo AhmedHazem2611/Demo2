@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "QuizTwo.Controllers.CategoryController",
+    "ContainingType": "QuizTwo.Controllers.CategoriesController",
     "Method": "GetAllCategories",
-    "RelativePath": "api/Category",
+    "RelativePath": "api/Categories",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,9 +10,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CategoryController",
+    "ContainingType": "QuizTwo.Controllers.CategoriesController",
     "Method": "Create",
-    "RelativePath": "api/Category",
+    "RelativePath": "api/Categories",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -26,9 +26,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CategoryController",
+    "ContainingType": "QuizTwo.Controllers.CategoriesController",
     "Method": "Update",
-    "RelativePath": "api/Category/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -47,9 +47,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CategoryController",
+    "ContainingType": "QuizTwo.Controllers.CategoriesController",
     "Method": "Delete",
-    "RelativePath": "api/Category/{Id}",
+    "RelativePath": "api/Categories/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -63,9 +63,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CustomerController",
+    "ContainingType": "QuizTwo.Controllers.CustomersController",
     "Method": "CreateCustomer",
-    "RelativePath": "api/Customer",
+    "RelativePath": "api/Customers",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -79,9 +79,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CustomerController",
+    "ContainingType": "QuizTwo.Controllers.CustomersController",
     "Method": "UpdateCustomer",
-    "RelativePath": "api/Customer/{id}",
+    "RelativePath": "api/Customers/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -100,9 +100,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CustomerController",
+    "ContainingType": "QuizTwo.Controllers.CustomersController",
     "Method": "DeleteCustomer",
-    "RelativePath": "api/Customer/{id}",
+    "RelativePath": "api/Customers/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -116,9 +116,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CustomerController",
+    "ContainingType": "QuizTwo.Controllers.CustomersController",
     "Method": "GetCustomerById",
-    "RelativePath": "api/Customer/{Id}",
+    "RelativePath": "api/Customers/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -132,9 +132,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.CustomerController",
+    "ContainingType": "QuizTwo.Controllers.CustomersController",
     "Method": "GetCustomerPurchaseHistory",
-    "RelativePath": "api/Customer/purchase-history/{id}",
+    "RelativePath": "api/Customers/purchase-history/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -148,9 +148,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.EmployeeController",
+    "ContainingType": "QuizTwo.Controllers.EmployeesController",
     "Method": "GetAllEmployees",
-    "RelativePath": "api/Employee",
+    "RelativePath": "api/Employees",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -158,9 +158,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.EmployeeController",
+    "ContainingType": "QuizTwo.Controllers.EmployeesController",
     "Method": "DeleteEmployee",
-    "RelativePath": "api/Employee",
+    "RelativePath": "api/Employees",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -174,9 +174,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.EmployeeController",
+    "ContainingType": "QuizTwo.Controllers.EmployeesController",
     "Method": "CreateEmployee",
-    "RelativePath": "api/Employee",
+    "RelativePath": "api/Employees",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -190,9 +190,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.EmployeeController",
+    "ContainingType": "QuizTwo.Controllers.EmployeesController",
     "Method": "UpdateEmployee",
-    "RelativePath": "api/Employee",
+    "RelativePath": "api/Employees",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -211,9 +211,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizTwo.Controllers.EmployeeController",
+    "ContainingType": "QuizTwo.Controllers.EmployeesController",
     "Method": "GetEmployeeSalesStat",
-    "RelativePath": "api/Employee/{id}/sales-stat",
+    "RelativePath": "api/Employees/{id}/sales-stat",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -224,6 +224,178 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.SalesController",
+    "Method": "GetAllSales",
+    "RelativePath": "api/Sales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.SalesController",
+    "Method": "CreateSale",
+    "RelativePath": "api/Sales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "saleDTO",
+        "Type": "QuizTwo.DTOs.UpdateSaleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.SalesController",
+    "Method": "UpdateSale",
+    "RelativePath": "api/Sales/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sale",
+        "Type": "QuizTwo.DTOs.UpdateSalesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.SalesController",
+    "Method": "DeleteSale",
+    "RelativePath": "api/Sales/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.SalesController",
+    "Method": "GetTotalRevenue",
+    "RelativePath": "api/Sales/revenue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "GetAllVehicles",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "CreateVehicle",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehicleDTO",
+        "Type": "QuizTwo.DTOs.CreateVehicleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "DeleteVehicle",
+    "RelativePath": "api/Vehicles/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "UpdateVehicle",
+    "RelativePath": "api/Vehicles/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vehicleDTO",
+        "Type": "QuizTwo.DTOs.UpdateVehicleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "GetAvailableVehicles",
+    "RelativePath": "api/Vehicles/available-vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "GetVehiclesByCategory",
+    "RelativePath": "api/Vehicles/category/{categoryName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizTwo.Controllers.VehiclesController",
+    "Method": "GetSoldVehicles",
+    "RelativePath": "api/Vehicles/sold-vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

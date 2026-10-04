@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using QuizTwo.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace QuizTwo.Models
+namespace QuizTwo.DTOs
 {
-    public class Vehicle
+    public class VehicleDTO
     {
         [Key]
         public int Id { get; set; }
@@ -18,7 +19,7 @@ namespace QuizTwo.Models
         [MaxLength(50)]
         public string? Color { get; set; }
         [Required]
-        [Range(1,double.MaxValue)]
+        [Range(1, double.MaxValue)]
         public decimal Price { get; set; }
         [Required]
         [Range(1, int.MaxValue)]
@@ -31,13 +32,10 @@ namespace QuizTwo.Models
         [MaxLength(30)]
         public string? Transmission { get; set; }
         [Required]
-        public string Status{ get; set; }
+        public string Status { get; set; }
         [Required]
         [ForeignKey(nameof(CategoryId))]
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
-        [ForeignKey(nameof(SaleId))]
-        public int? SaleId { get; set; }
-        public Sale? Sale { get; set; }
+
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuizTwo.Models;
 
@@ -11,9 +12,11 @@ using QuizTwo.Models;
 namespace QuizTwo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20261004090848_saleidNull")]
+    partial class saleidNull
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -174,7 +177,7 @@ namespace QuizTwo.Migrations
                             Id = 1,
                             Address = "123 Main St",
                             City = "New York",
-                            DateOfBirth = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(7782),
+                            DateOfBirth = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4505),
                             Nationality = "Egyptian"
                         },
                         new
@@ -182,7 +185,7 @@ namespace QuizTwo.Migrations
                             Id = 2,
                             Address = "456 Elm St",
                             City = "Los Angeles",
-                            DateOfBirth = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(7940),
+                            DateOfBirth = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4686),
                             Nationality = "Egyptian"
                         },
                         new
@@ -190,7 +193,7 @@ namespace QuizTwo.Migrations
                             Id = 3,
                             Address = "789 Oak St",
                             City = "Chicago",
-                            DateOfBirth = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(7951),
+                            DateOfBirth = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4699),
                             Nationality = "Egyptian"
                         },
                         new
@@ -198,7 +201,7 @@ namespace QuizTwo.Migrations
                             Id = 4,
                             Address = "321 Pine St",
                             City = "Houston",
-                            DateOfBirth = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(7963),
+                            DateOfBirth = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4709),
                             Nationality = "Egyptian"
                         });
                 });
@@ -245,7 +248,7 @@ namespace QuizTwo.Migrations
                             Id = 1,
                             Email = "jogn@mai.com",
                             FullName = "John Doe",
-                            HireDate = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(8057),
+                            HireDate = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4807),
                             PhoneNumber = "555-1234",
                             Position = "Sales Manager"
                         },
@@ -254,7 +257,7 @@ namespace QuizTwo.Migrations
                             Id = 2,
                             Email = "horg@gmail.com",
                             FullName = "Jane Smith",
-                            HireDate = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(8075),
+                            HireDate = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4823),
                             PhoneNumber = "555-5678",
                             Position = "Sales Associate"
                         },
@@ -263,7 +266,7 @@ namespace QuizTwo.Migrations
                             Id = 3,
                             Email = "mich@gmail.om",
                             FullName = "Michael Johnson",
-                            HireDate = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(8087),
+                            HireDate = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4835),
                             PhoneNumber = "555-9012",
                             Position = "Sales Representative"
                         });
@@ -318,7 +321,7 @@ namespace QuizTwo.Migrations
                             EmployeeId = 1,
                             PaymentMethod = "Visa",
                             SalePrice = 24000m,
-                            SalesDate = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(8162),
+                            SalesDate = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4916),
                             VehicleId = 0
                         },
                         new
@@ -328,7 +331,7 @@ namespace QuizTwo.Migrations
                             EmployeeId = 2,
                             PaymentMethod = "Visa",
                             SalePrice = 19000m,
-                            SalesDate = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(8183),
+                            SalesDate = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4934),
                             VehicleId = 0
                         },
                         new
@@ -338,7 +341,7 @@ namespace QuizTwo.Migrations
                             EmployeeId = 3,
                             PaymentMethod = "Visa",
                             SalePrice = 17000m,
-                            SalesDate = new DateTime(2026, 10, 4, 12, 21, 42, 932, DateTimeKind.Local).AddTicks(8197),
+                            SalesDate = new DateTime(2026, 10, 4, 12, 8, 47, 139, DateTimeKind.Local).AddTicks(4944),
                             VehicleId = 0
                         });
                 });
@@ -425,7 +428,7 @@ namespace QuizTwo.Migrations
                             Model = "Camry",
                             Price = 25000m,
                             SaleId = 1,
-                            Status = "Sold",
+                            Status = "Available",
                             Transmission = "Automatic",
                             VIN = "1Hfosdjf",
                             Year = 2020
@@ -441,7 +444,7 @@ namespace QuizTwo.Migrations
                             Model = "Civic",
                             Price = 20000m,
                             SaleId = 2,
-                            Status = "Sold",
+                            Status = "Available",
                             Transmission = "Automatic",
                             VIN = "2Hfosdjf",
                             Year = 2019
@@ -457,7 +460,7 @@ namespace QuizTwo.Migrations
                             Model = "Focus",
                             Price = 18000m,
                             SaleId = 3,
-                            Status = "Sold",
+                            Status = "Available",
                             Transmission = "Automatic",
                             VIN = "3Hfosdjf",
                             Year = 2018

@@ -8,10 +8,10 @@ namespace QuizTwo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class EmployeesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        public EmployeeController(IUnitOfWork employeeRepo)
+        public EmployeesController(IUnitOfWork employeeRepo)
         {
             _unitOfWork = employeeRepo;
         }
